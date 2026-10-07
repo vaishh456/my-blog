@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vaishnavi Kuppe | AI & Data Science Student Blog</title>
+<meta name="description" content="Vaishnavi Kuppe's blog about learning AI, Data Science, Python and web development at REVA University.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👩‍💻</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+  <a class="logo" href="#top">Vaishnavi K.</a>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">Menu</button>
+  <nav id="navLinks">
+    <a href="#about">About</a>
+    <a href="#blog">Blog</a>
+    <a href="#projects">Projects</a>
+    <a href="#learning">Learning</a>
+    <a href="#contact">Contact</a>
+    <button id="themeBtn" class="theme-btn" aria-label="Switch theme">Dark</button>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-text">
+      <p class="tag">B.Tech AI &amp; Data Science · REVA University</p>
+      <h1>Hi, I'm Vaishnavi. I write about learning AI one project at a time.</h1>
+      <p class="lead">I'm a second-year student sharing what I build, break and figure out along the way, from Python and data science to web development and college projects.</p>
+      <div class="actions">
+        <a class="btn primary" href="#blog">Read the blog</a>
+        <a class="btn" href="#projects">See my projects</a>
+      </div>
+    </div>
+    <pre class="code-card" aria-label="A Python snippet describing Vaishnavi"><code><span class="c"># about_me.py</span>
+<span class="k">student</span> = {
+  <span class="s">"name"</span>: <span class="s">"Vaishnavi Kuppe"</span>,
+  <span class="s">"year"</span>: <span class="n">2</span>,
+  <span class="s">"college"</span>: <span class="s">"REVA University"</span>,
+  <span class="s">"branch"</span>: <span class="s">"AI &amp; Data Science"</span>,
+  <span class="s">"learning"</span>: [<span class="s">"Python"</span>, <span class="s">"Pandas"</span>,
+               <span class="s">"ML basics"</span>, <span class="s">"Web dev"</span>],
+}
+<span class="f">print</span>(student[<span class="s">"learning"</span>][<span class="n">0</span>])
+<span class="c"># → Python</span></code></pre>
+  </section>
+
+  <section id="about" class="section narrow">
+    <h2>About me</h2>
+    <p>I'm in my second year of B.Tech in Artificial Intelligence and Data Science at REVA University, Bengaluru. I started with Python and got hooked on turning messy data into something useful.</p>
+    <p>This blog is my learning notebook. I write down what I understand, what confused me and what I'd tell my past self, in the hope it helps other students starting out too.</p>
+  </section>
+
+  <section id="blog" class="section">
+    <h2>Blog</h2>
+    <div class="filters" id="filters" role="group" aria-label="Filter posts by topic"></div>
+    <div class="grid" id="posts"></div>
+  </section>
+
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="grid" id="projectGrid"></div>
+  </section>
+
+  <section id="learning" class="section">
+    <h2>What I'm learning</h2>
+    <div class="skills" id="skills"></div>
+  </section>
+
+  <section id="contact" class="section narrow">
+    <h2>Let's connect</h2>
+    <p>Have a question, a project idea or advice for a student just starting out? I'd love to hear from you.</p>
+    <div class="actions">
+      <a class="btn primary" href="mailto:your-email@example.com">Email me</a>
+      <a class="btn" href="https://github.com/your-username" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn" href="https://www.linkedin.com/in/your-username" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </section>
+</main>
+
+<footer>© <span id="year"></span> Vaishnavi Kuppe. Built with HTML, CSS and JavaScript.</footer>
+
+<dialog id="postDialog" class="dialog" aria-labelledby="dTitle">
+  <button class="close" id="closeBtn" aria-label="Close post">Close</button>
+  <p class="meta" id="dMeta"></p>
+  <h3 id="dTitle"></h3>
+  <div id="dBody"></div>
+</dialog>
+
+<script src="script.js"></script>
+</body>
+</html>
